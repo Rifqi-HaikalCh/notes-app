@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Catatan</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <app-header search-placeholder="Cari catatan..."></app-header>
+        
+        <note-form max-title-length="50"></note-form>
+        
+        <div class="notes-section">
+            <h2>📝 Catatan Aktif</h2>
+            <notes-list id="active-notes" list-type="active"></notes-list>
+        </div>
+        
+        <div class="notes-section">
+            <h2>📦 Arsip</h2>
+            <notes-list id="archived-notes" list-type="archived"></notes-list>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/components/app-header.js"></script>
+    <script src="js/components/note-form.js"></script>
+    <script src="js/components/notes-list.js"></script>
+    <script src="js/components/note-item.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
